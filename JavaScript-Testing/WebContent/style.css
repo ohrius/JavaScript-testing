@@ -1,11 +1,93 @@
 @charset "ISO-8859-1";
 
-html, body{
+* {
+	box-sizing: border-box;
+}
+
+html, body {
 	height: 100%;
 }
-	
 
-body{
-	margin:0px; 
+body {
+	margin: 0;
 	background-color:#828282;
+}
+
+#wrapper {
+	margin: 0 10%;
+}
+
+#header {
+	background: url(img/header.png);
+	background-repeat: no-repeat;
+	background-color: #333333;
+	height: 40px;
+	text-align: center;
+}
+
+#navbar, footer {
+	overflow: hidden;
+	background-color: #333333;
+	color: #f2f2f2;
+}
+
+footer {
+	height:40px;
+	padding: 0px 16px;
+}
+
+#navbar a {
+	float: left;
+	display: block;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 11px 16px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	background-color: #dddddd;
+	color: black;
+}
+
+.row {
+    min-height: calc(100vh - 120px);
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	background-color: #ffffff;
+}
+
+.column {
+	float: left;
+	padding: 10px;
+}
+
+.column.side {
+	width: 24%; /* Last percent goes to ".verticalline"  */
+}
+
+.column.middle {
+	width: 75%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+		width: 100%;
 	}
+	#wrapper {
+		margin: 0;
+	}
+}
+
+.verticalline {
+	background-color: #333333;
+	width: 1px;
+	float: left;
+}
