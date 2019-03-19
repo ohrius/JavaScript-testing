@@ -91,3 +91,9 @@ footer {
 	width: 1px;
 	float: left;
 }
+#txt{
+	font-size:20px;
+}
+.linebreak{
+	white-space: pre-line;
+}
