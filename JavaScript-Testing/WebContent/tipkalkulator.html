@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Testing</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jstipkalkulator.js"></script>
+</head>
+<body onload="addToDropdown()" )>
+	<div id="wrapper">
+		<div id="header"></div>
+		<div id="navbar">
+			<a href="index.html">Forsiden</a> <a href="clock.html">Klokke</a> <a
+				href="tipkalkulator.html">Tipkalkulator</a> <a href="#">placeholder</a>
+			<a href="#">placeholder</a> <a href="#">placeholder</a>
+		</div>
+		<div class="row">
+			<div class="column side">
+				<h2>Tips-kalkulator</h2>
+				<p>Lorem ipsum.</p>
+			</div>
+			<div class="verticalline"></div>
+			<div class="column middle">
+				<h2>Kalkulator</h2>
+				<form name="tipform">
+					<p>Hva kom regningen på?</p>
+					<input id="price" type="number" placeholder="Sum på regning"><br>
+					<br>
+					<p>Hvordan var oppholdet?</p>
+					<select id="dropdowntippercent">
+						<option disabled selected value="-1">--VELG EN PROSENT--</option>
+					</select><br> <br>
+					<p>hvor mange deler regningen?</p>
+					<input id="amount" type="number" placeholder="Antall personer"><br>
+					<br>
+					<button id="calculate" type="button" onclick="buttonClick()")>Beregn tips</button><br>
+				</form>
+				<div id="tipSum"></div>
+				<div id="txt"></div>
+			</div>
+		</div>
+		<footer>
+			<pre>Morten Ohren	ohrius92@gmail.com</pre>
+		</footer>
+	</div>
+
+</body>
+</html>
