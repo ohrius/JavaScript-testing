@@ -10,7 +10,7 @@ html, body {
 
 body {
 	margin: 0;
-	background-color:#828282;
+	background-color: #828282;
 }
 
 #wrapper {
@@ -32,7 +32,7 @@ body {
 }
 
 footer {
-	height:40px;
+	height: 40px;
 	padding: 0px 16px;
 }
 
@@ -51,7 +51,7 @@ footer {
 }
 
 .row {
-    min-height: calc(100vh - 120px);
+	min-height: calc(100vh - 120px);
 	display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
@@ -91,12 +91,44 @@ footer {
 	width: 1px;
 	float: left;
 }
-#txt{
-	font-size:20px;
+
+#txt {
+	font-size: 20px;
 }
-.linebreak{
+
+.linebreak {
 	white-space: pre-line;
 }
-#tipsum{
-	font-size:20px;
+
+#tipsum {
+	font-size: 20px;
+}
+
+#flagcontainer {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flag {
+	height: 235px;
+	border: 1px solid;
+	margin: 2vh 2vh;
+	border: 1px solid;
+}
+
+#flagtable table, th, td {
+	border-bottom: 1px solid #ddd;
+	border-collapse: collapse;
+}
+
+#flagtable table {
+	width: 100%
+}
+
+#flagtable td {
+	padding: 15px 5px;
+	width: 50%
 }

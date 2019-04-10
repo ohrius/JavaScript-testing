@@ -1,5 +1,5 @@
 /**
- * 
+ * Script til tipkalkulator.html
  */
 
 const tipPercent = [ {

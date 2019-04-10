@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Testing</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jsflag.js"></script>
+</head>
+<body onload="onCountryinformationLoad()">
+	<div id="wrapper">
+		<div id="header"></div>
+		<div id="navbar">
+			<a href="index.html">Forsiden</a> <a href="clock.html">Klokke</a> <a
+				href="tipkalkulator.html">Tipkalkulator</a> <a
+				href="countryinformation.html">Flagg og info</a> <a href="#">placeholder</a>
+			<a href="#">placeholder</a>
+		</div>
+		<div class="row">
+			<div class="column side">
+				<h2>Informasjon om nordiske land</h2>
+				<p>Ved å holde musen over et flagg vil det dukke opp informasjon
+					i tabellen under basert på hvilken flagg musen holdes over.</p>
+				<p>Her har jeg brukt funksjoner som kjører når musen er over
+					diverse objekter i html. Hvert flagg er samme klasse, men hentes
+					ved hjelp av getElementsByClassName og lagt inn i en array. Setter deretter på en EventListener på hvert objekt i denne arrayen som kjører funksjonen
+					for å legge inn informasjon i tabellen på nettsiden.</p>
+				<div id="flagtable">
+					<table>
+						<tr>
+							<td>Navn:</td>
+							<td class="flaginfo">.</td>
+						</tr>
+						<tr>
+							<td>Hovedstad:</td>
+							<td class="flaginfo"></td>
+						</tr>
+						<tr>
+							<td>Språk:</td>
+							<td class="flaginfo"></td>
+						</tr>
+						<tr>
+							<td>Befolkning:</td>
+							<td class="flaginfo"></td>
+						</tr>
+						<tr>
+							<td>Valuta:</td>
+							<td class="flaginfo"></td>
+						</tr>
+						<tr>
+							<td>Nasjonalsang:</td>
+							<td class="flaginfo"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="verticalline"></div>
+			<div class="column middle">
+				<div id="flagcontainer">
+					<div class="flag">
+						<img src="img/norwegian_flag.png" alt="Norwegian flag">
+					</div>
+					<div class="flag">
+						<img src="img/swedish_flag.png" alt="Norwegian flag">
+					</div>
+					<div class="flag">
+						<img src="img/danish_flag.png" alt="Norwegian flag">
+					</div>
+					<div class="flag">
+						<img src="img/finnish_flag.png" alt="Norwegian flag">
+					</div>
+					<div class="flag">
+						<img src="img/icelandic_flag.png" alt="Norwegian flag">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<pre>Morten Ohren	ohrius92@gmail.com</pre>
+		</footer>
+	</div>
+
+</body>
+</html>
